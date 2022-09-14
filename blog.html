@@ -14,7 +14,7 @@
         <h4 class="text-danger">Recent Post</h4>
         <h1 class="text-info">Advance JavaScript Blog</h1>
     </section>
-    <section class="container mb-5">
+    <section class="container mb-5 fw-fw-bolder">
         <h3>1. What are the difference between local storage and session storage?</h3>
         <div class="row mt-3">
             <div class="col-sm-12 col-lg-8 ">
@@ -52,7 +52,7 @@
         </div>
 
     </section>
-    <section class="container my-5">
+    <section class="container my-5 fw-fw-bolder">
         <h3>2. What are the difference between global scope and local scope?</h3>
         <div class="row mt-3">
             <div class="col-sm-12 col-lg-8 ">
@@ -76,32 +76,32 @@
         </div>
 
     </section>
-    <section class="container my-5">
-        <h3>2. What are the difference between global scope and local scope?</h3>
+    <section class="container my-5 fw-fw-bolder">
+        <h3>3. Functional process of Event loop in JavaScript?</h3>
         <div class="row mt-3">
             <div class="col-sm-12 col-lg-8 ">
-                <h4 class="text-info">Global Scope:-</h4>
+                <h4 class="text-info">Functional process of event loop:-</h4>
                 <p>
-                    The variables defined outside of any function or curly brackets are known as global variables and
-                    have global scope. Global scope means that the variables can be accessed from any part of that
-                    program, any function or conditional state can access that variable.
-                </p>
-                <h4 class="text-info">Local Scope:-</h4>
-                <p>
-                    If you were to define some variables inside curly brackets {} or inside a specific function then
-                    those variables are called local variables The local variables have a very confined scope which is
-                    called the local scope But, with the release of ES6, the local scope was further broken down into
-                    two different scopes:
+                    Back to our timeout example, once the Web API finishes executing the task, it doesn’t just push it
+                    back to the Call Stack automatically. It goes to the Task Queue. <br>
+                    A queue is a data structure that works on the First in First out principle, so as tasks get pushed
+                    into the queue, they get out in that same order. Tasks that have been executed by the Web API’s,
+                    which are being pushed to the Task Queue, then go back to the Call Stack to get their result printed
+                    out. <br>
+                    The event loop is a process that waits for the Call Stack to be clear before pushing callbacks from
+                    the Task Queue to the Call Stack. Once the Stack is clear, the event loop triggers and checks the
+                    Task Queue for available callbacks. If there are any, it pushes it to the Call Stack, waits for the
+                    Call Stack to be clear again, and repeats the same process.
                 </p>
             </div>
             <div class="col-4 lg-col-12">
-                <img src="./blog-image/scope.jpg" class="h-100 w-100 mx-auto" alt="">
+                <img src="./blog-image/eventLoop.jpg" class="h-100 w-100 mx-auto" alt="">
             </div>
         </div>
 
     </section>
-    <section class="container my-5">
-        <h3>2. What are the reason to got the error as undefined?</h3>
+    <section class="container my-5 fw-fw-bolder">
+        <h3>4. What are the reason to got the error as undefined?</h3>
         <div class="row mt-3">
             <div class="col-sm-12 col-lg-8 ">
                 <p>1. variable that was not initialized will give undefined. <br>
